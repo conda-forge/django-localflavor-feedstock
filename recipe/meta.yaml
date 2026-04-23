@@ -1,13 +1,13 @@
 {% set name = "django-localflavor" %}
-{% set version = "4.0" %}
+{% set version = "5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 11859e522dba74aa6dde5a659242b1fbc5efb4dea08e9b77315402bdeca5194e
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9ddcce5dac6a956d076f3134071c64d4c76e1c7063e8aa7730414a2a1c5ded59
 
 build:
   noarch: python
